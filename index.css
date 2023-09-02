@@ -30,7 +30,7 @@ nav {
 	font-weight: 700;
 	border-color: transparent;
 	border-radius: 25px;
-	background-color: #CCC9DC;
+	background-color: darkgoldenrod;
 }
 
 #home-all {
@@ -45,13 +45,157 @@ nav {
 .profile {
 	background-color: #0C1821;
 	height: 450px;
+	position: relative;
+	flex-direction: column;
 }
 
 .hello {
-	color: #DBAA4B;
+	color: darkgoldenrod;
 }
 
 img {
   height: 504px;
   width: 370px;
   border-radius: 10%;
+}
+
+.socmed-icon-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.icon-wrapper {
+  display: block;
+  font-size: 40px;
+  color: darkgoldenrod;
+}
+
+.profile-info {
+
+}
+
+.socmed-icon-container-lg {
+	display: none;
+}
+
+.about-me {
+	margin-top: 150px;
+}
+
+.portfolio-top {
+	background-color: darkgoldenrod;
+	border-radius: 20px;
+	z-index: 2;
+	position: relative;
+}
+
+.development {
+	background-color: #0C1821;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	translate: 0 -50px;
+	z-index: 1;
+	position: relative;
+	align-content: center;
+}
+
+.frontend {
+	align-content: center;
+	align-items: center;
+	text-align: center;
+}
+.backend {
+	align-content: center;
+	align-items: center;
+	text-align: center;
+}
+.fullstack {
+	align-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.development-pics {
+	height: 215px !important;
+}
+
+.development-text-container {
+	border: 3px solid darkgoldenrod;
+	border-radius: 15px;
+}
+
+.portfolio-description {
+	margin-top: 20px;
+}
+.tools {
+	width: 150px;
+	height: 150px;
+}
+
+.tools-all {
+	background-color: #0C1821;
+	align-content: center;
+}
+
+
+/*MEDIA==================================================*/
+@media (max-width: 992px) {
+	.profile-info {
+		flex-direction: column;
+		align-items: center;
+	}
+	.socmed-icon-container {
+		flex-direction: row;
+		gap: 0 30px;
+		justify-content: center;
+		color: black;
+		display: none;
+	}
+	.profile {
+		margin-bottom: 10px;
+	}
+	.profile-pic {
+		align-items: center;
+	}
+	.home-description {
+		background-color: #0C1821;
+		height: 1008px;
+
+	}
+	.hello-text{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.socmed-icon-container-lg {
+		display: flex;
+		flex-direction: row;
+		gap: 0 30px;
+		justify-content: center;
+		color: black;
+	}
+	.about-me-title {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.about-me-description {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.portfolio-projects {
+		padding-top: 10px;
+/*		translate: 0 -50px;*/
+		text-align: center;
+	}
+
+	.project-2 {
+		margin-top: 10px;
+	}
+
+}
