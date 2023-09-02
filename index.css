@@ -139,6 +139,24 @@ img {
 	align-content: center;
 }
 
+.contact-form {
+	border: 3px solid darkgoldenrod;
+	border-radius: 30px;
+}
+
+.contact-section {
+	background-color: #0C1821;
+	margin-top: 100px;
+}
+
+.contact-section-title {
+	color: darkgoldenrod;
+}
+
+.hr {
+	border-top: 3px solid	whitesmoke;
+	margin-top: 50px;
+}
 
 /*MEDIA==================================================*/
 @media (max-width: 992px) {
