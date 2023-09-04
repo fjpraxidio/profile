@@ -58,12 +58,13 @@ nav {
 
 .nav-link:hover {
 	cursor: pointer;
-	text-decoration: orange 4px underline overline !important;
+  background-color: white;
+  color: black !important;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
+  border-radius: 50px;
 }
 
-#home-all {
-
-}
 
 .home-description {
 /*	background-color: #0C1821;*/
@@ -77,8 +78,9 @@ nav {
 	flex-direction: column;
 }
 
-.hello {
+.name {
 	color: darkgoldenrod;
+	font-weight: 20;
 }
 
 img {
