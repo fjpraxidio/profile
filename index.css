@@ -152,6 +152,7 @@ img {
     color: black !important;
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
     font-weight: bold;
+    border-radius: 50px;
 }
 
 .icon-wrapper-proj {
