@@ -21,30 +21,30 @@
 		<!-- Navbar Section -->
 		<section id="navbar-all">
 			<div>
-				<nav class="navbar navbar-expand-lg navbar-dark">
+				<nav class="nav navbar navbar-expand-lg navbar-dark ">
 				  <a class="navbar-brand font-weight-bolder" 
-				  href="#">Frank</a>
+				  href="#">prangk</a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
 				  <div class="collapse navbar-collapse right-nav" id="navbarNav">
 				    <ul class="navbar-nav ml-auto">
 				    	<li class="nav-item">
-				        <a class="nav-link" href="#">Home</a>
-				      </li>
-				      <li class="nav-item active">
-				        <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Portfolio</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Tools</a>
-				      </li>
+				      	 	<a class="nav-link" href="#home">Home</a>
+				     	</li>
+				      	<li class="nav-item">
+				        	<a class="nav-link" href="#about-me">About Me<span class="sr-only">(current)</span></a>
+				      	</li>
+				     	<li class="nav-item">
+				        	<a class="nav-link" href="#portfolio">Portfolio</a>
+				      	</li>
+				      	<li class="nav-item">
+				       	 	<a class="nav-link" href="#tools">Tools</a>
+				     	</li>
 				    </ul>
 			    	<ul class="navbar-nav ml-auto">
 			    		<li class="nav-item">
-                    <button id="nav-button">Get in Touch</button>
+			    			<a class="nav-link" href="#contact-section"><button id="nav-button">Get in Touch</button></a>
 			    	</ul>
 				  </div>
 				</nav>
@@ -53,28 +53,31 @@
 		<!-- End Navbar -->
 
 		<!-- Start Home -->
-		<section class="home-all container-fluid">
+		<section id="landing" class="landing container-fluid">
+			<video autoplay loop muted plays-inline class="back-video"><source src="./img/vid1.mp4" type="video/mp4"></video>
+		</section>
+		<section id="home" class="home-all container-fluid">
 			<div class="home-description row">
 				<div class="hello-text col-lg-6 col-sm-12 col-md-12 p-lg-5 px-5 pt-5 pb-sm-0 pb-xs-0 d-flex">
 					<div>
-						<h2 class="hello">Hello, I'm</h2>
-						<h1 class="text-white">Frankjocell Praxidio</h1>
+						<h1 class="hello">Frankjocell Praxidio</h1>
+						<h2 class="text-white">Frankjocell Praxidio</h2>
 						<p class="text-muted">A fullstack web developer. Proficient in both front and back end coding. A perfectionist in designing, developing, and maintaining fully-fledged and functioning platforms with databases or servers.</p>
 					</div>
 					<div class="socmed-icon-container-lg p-lg-5 p-sm-2 mt-5">
-			                <div class="icon-wrapper">
-			                     <i class="uil uil-facebook"></i>
-			                </div>
-			                <div class="icon-wrapper">
-			                     <i class="uil uil-envelope"></i>
-			                </div>
-			                <div class="icon-wrapper">
-			                     <i class="uil uil-twitter"></i>
-			                </div>
-			                <div class="icon-wrapper">
-			                     <i class="uil uil-linkedin"></i>
-			                </div>
-						</div>
+		                <div class="icon-wrapper">
+		                    <i class="uil uil-facebook"></i>
+		                </div>
+		                <div class="icon-wrapper">
+		                    <i class="uil uil-envelope"></i>
+		                </div>
+		                <div class="icon-wrapper">
+		                    <i class="uil uil-twitter"></i>
+		                </div>
+		                <div class="icon-wrapper">
+		                    <i class="uil uil-linkedin"></i>
+		                </div>
+					</div>
 				</div>
 				<div class="profile col-lg-6 col-sm-12 col-md-12 p-lg-5 pb-sm-4 pt-sm-0 pt-xs-0">
 					<div class="profile-info d-flex justify-sm-content-center justify-md-content-center">
@@ -84,19 +87,11 @@
 						src="./img/profilepic.jpg" 
 						alt="My Profile Picture">
 						</div>
-						<div class="socmed-icon-container p-lg-5 p-sm-2 mt-5">
-			                <div class="icon-wrapper">
-			                     <i class="uil uil-facebook"></i>
-			                </div>
-			                <div class="icon-wrapper">
-			                     <i class="uil uil-envelope"></i>
-			                </div>
-			                <div class="icon-wrapper">
-			                     <i class="uil uil-twitter"></i>
-			                </div>
-			                <div class="icon-wrapper">
-			                     <i class="uil uil-linkedin"></i>
-			                </div>
+						<div class="socmed-icon-container p-lg-5 p-sm-2">
+			                    <a href="https://www.facebook.com/fjpraxidio/" class="icon-wrapper" target="_blank"><i class="uil uil-facebook"></i></a>
+			                    <a href="https://github.com/fjpraxidio" class="icon-wrapper" target="_blank"><i class="uil uil-github"></i></a>
+			                    <a href="https://gitlab.com/fjpraxidio" class="icon-wrapper" target="_blank"><i class="uil uil-gitlab"></i></a>
+			                    <a href="https://www.linkedin.com/in/fjpraxidio/" class="icon-wrapper" target="_blank"><i class="uil uil-linkedin"></i></a>
 						</div>
 					
 		            </div>
@@ -106,7 +101,7 @@
 		<!-- End Home -->
 
 		<!-- Start About Me -->
-		<section class="about-me container p-5">
+		<section id="about-me" class="about-me container p-5">
 			<div class="row">
 				<div class="about-me-title col-lg-6 col-md-12 col-sm-12">
 					<h1>What Can I Do For Your Needs</h1>
@@ -180,7 +175,7 @@
 
 		<!-- Start Portfolio -->
 		<div>
-		<section class="portfolio-projects container-fluid d-flex justify-content-center mt-3">
+		<section id="portfolio" class="portfolio-projects container-fluid d-flex justify-content-center mt-3">
 				<div class="row">
 					<h1 class="portfolio-description col-lg-6 col-md-12 col-sm-12 text-center">Portfolio</h1>
 					<h4 class="portfolio-description col-lg-6 col-md-12 col-sm-12 text-center">The following are the best portfolios during the career path of the web developer</h4>
@@ -209,7 +204,7 @@
 		<!-- End Portfolio -->
 
 		<!-- Tools Section Start -->
-	    <div class="tools-all container-fluid text-center mt-5 pt-5 text-light">
+	    <div id="tools" class="tools-all container-fluid text-center mt-5 pt-5 text-light">
 	        <!-- Core Tools Section Start -->
 	        <h2>Core Tools</h2>
 
@@ -303,10 +298,10 @@
 		            <!-- Data target should be same as the modal id to toggle -->
 		            <button
 		              type="button"
-		              class="btn btn-dark"
+		              class="contact-form-button"
 		              data-toggle="modal"
 		              data-target="#modalDiv">
-		              Send Email
+		              Contact Me
 		            </button>
 
 		            <!-- Modal -->
@@ -362,7 +357,7 @@
 
 
 	    <!-- Footer -->
-        <footer class="d-flex justify-content-center p-3 bg-light text-dark ">
+        <footer class="footer d-flex justify-content-center p-3 text-light">
             <div class="mx-3">&copy;  2023 Frankjocell Praxidio</div>
             <div class="mx-3">|</div>
             <div class="mx-3">All rights reserved.</div>

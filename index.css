@@ -1,7 +1,8 @@
 /*CSS RESET*/
 * {
 	font-family: 'Poppins', sans-serif;
-
+	padding: 0;
+	margin: 0;
 }
 nav {
 	padding: 1px;
@@ -10,16 +11,38 @@ nav {
 	z-index: 1;
 }
 
-#navbar-all {
-	background-color: #0C1821;
+.landing {
+	position: relative;
 }
 
+.back-video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+	z-index: -1;
+	object-fit: cover;
+}
+
+#navbar-all {
+	background-color: #0C1821;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	transition-timing-function: 0.5s ease;
+}
+
+
 .navbar-brand {
-	padding: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .nav-item {
-	padding: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 #nav-button {
@@ -33,17 +56,22 @@ nav {
 	background-color: darkgoldenrod;
 }
 
+.nav-link:hover {
+	cursor: pointer;
+	text-decoration: orange 4px underline overline !important;
+}
+
 #home-all {
 
 }
 
 .home-description {
-	background-color: #0C1821;
+/*	background-color: #0C1821;*/
 	height: 450px;
 }
 
 .profile {
-	background-color: #0C1821;
+/*	background-color: #0C1821;*/
 	height: 450px;
 	position: relative;
 	flex-direction: column;
@@ -60,7 +88,7 @@ img {
 }
 
 .socmed-icon-container {
-  margin-top: 20px;
+  margin-top: 1px;
   display: flex;
   flex-direction: column;
   gap: 10px 0;
@@ -68,9 +96,23 @@ img {
 
 .icon-wrapper {
   display: block;
-  font-size: 40px;
+  font-size: 2.5em;
   color: darkgoldenrod;
 }
+
+.icon-wrapper i {
+  color: darkgoldenrod;
+  text-decoration: none !important;
+}
+
+.icon-wrapper:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black !important;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
 
 .profile-info {
 
@@ -158,6 +200,26 @@ img {
 	margin-top: 50px;
 }
 
+.footer	{
+	background-color: darkgoldenrod;
+}
+
+.contact-form-button {
+	color: white;
+	padding: 10px;
+	width: 9rem;
+	font-size: 15px;
+	font-weight: 700;
+	border-color: transparent;
+	border-radius: 25px;
+	background-color: darkgoldenrod;
+}
+
+
+
+
+
+
 /*MEDIA==================================================*/
 @media (max-width: 992px) {
 	.profile-info {
@@ -178,10 +240,25 @@ img {
 		align-items: center;
 	}
 	.home-description {
-		background-color: #0C1821;
+/*		background-color: #0C1821;*/
 		height: 1008px;
-
 	}
+
+	.landing {
+	position: relative;
+}
+
+.back-video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1008px;
+	overflow: hidden;
+	z-index: -1;
+	object-fit: cover;
+}
+
 	.hello-text{
 		flex-direction: column;
 		align-items: center;
