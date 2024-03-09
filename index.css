@@ -1274,3 +1274,18 @@ html {
         margin-top: 3em;
     }
 }
+
+/*====================================================================================================*/
+
+@media (min-height: 1500px) and (max-height: 2000px) {
+    .back-video {
+        height: 2500px;
+    }
+}
+
+@media (min-height: 2001px) and (max-height: 3000px) {
+    .back-video {
+        border: 2px solid red;
+        height: 3500px;
+    }
+}
